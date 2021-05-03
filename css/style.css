@@ -1,0 +1,51 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* SECTIONS */
+#app {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #000;
+}
+
+li {
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading i {
+    display: inline-block;
+    font-size: 50px;
+    animation: spin 1s linear infinite;
+}
+
+/* ANIMATION */
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
