@@ -16,7 +16,12 @@
     
     <!-- VUE ENTRY -->
     <div id="app">
-       
+       <div class="list" v-if="dataOk">
+           <ul>
+               <li v-for="email in emailList">{{ email }}</li>
+           </ul>
+       </div>
+       <h2 v-else>LOADING...</h2>
     </div>
 
     <!-- JS -->
